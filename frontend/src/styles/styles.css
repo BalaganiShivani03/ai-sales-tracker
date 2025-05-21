@@ -1,0 +1,153 @@
+/* Global Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('/Data-pipeline.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+}
+
+/* Typography */
+h1, h3 {
+  margin: 0 0 10px;
+  color: #ffe082;
+  font-weight: 600;
+}
+
+/* Deal Form Container */
+.deal-form-container {
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  padding: 20px;
+  margin: 0 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.deal-form-container h3 {
+  color: #ffcc80;
+}
+
+.deal-form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.deal-form-container form input,
+.deal-form-container form select {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+/* Glowing Button */
+.deal-form-container form button {
+  background: #00bcd4;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4 inset;
+  transition: all 0.3s ease-in-out;
+}
+
+.deal-form-container form button:hover {
+  background-color: #008ba3;
+  box-shadow: 0 0 20px #00e5ff, 0 0 30px #00e5ff inset;
+}
+
+/* General Button Fallback */
+button {
+  cursor: pointer;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #1565c0;
+  box-shadow: 0 0 10px rgba(21, 101, 192, 0.7);
+}
+
+/* Pipeline Column */
+.pipeline-column {
+  min-width: 250px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Deal Cards */
+.deal-card {
+  background: rgba(33, 33, 33, 0.85);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.deal-title {
+  font-weight: 600;
+  color: #ffca28;
+}
+
+.deal-value {
+  color: #66bb6a;
+  font-weight: bold;
+}
+
+.deal-customer {
+  color: #9575cd;
+}
+
+/* AI Panel */
+.ai-panel {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  color: #ffecb3;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.ai-panel:hover {
+  box-shadow: 0 0 20px #ffd54f, 0 0 30px #ffecb3 inset;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .deal-form-container form {
+    flex-direction: column;
+  }
+
+  .pipeline-column {
+    min-width: 95%;
+  }
+
+  .ai-panel {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .deal-form-container {
+    margin: 10px;
+  }
+}
